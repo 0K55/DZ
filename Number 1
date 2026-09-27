@@ -1,0 +1,9 @@
+def partition(lst, predicate):
+    true_list = []
+    false_list = []
+    for item in lst:
+        if predicate(item):
+            true_list.append(item)
+        else:
+            false_list.append(item)
+    return true_list, false_list
